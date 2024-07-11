@@ -1,6 +1,6 @@
 # Custom Menu API
 
-The Custom Menu API allows developers to create and manage a personalized interface for drivers, enhancing their experience with tailored functionalities. This API is structured around two main components: the Custom Menu (**[Scren](?p=/custom-menu-schemas#custom-menu-scren)**) and Widgets (**[Mbbut](?p=/custom-menu-schemas#widget-mbut)**). The Custom Menu serves as the container for various widgets, each performing specific actions or displaying pertinent information. By using this API, developers can design a menu layout that best fits the needs of drivers, integrating essential features directly into their workflow.
+The Custom Menu API allows developers to create and manage a personalized interface for drivers, enhancing their experience with tailored functionalities. This API is structured around two main components: the Custom Menu (**[Scren](?p=/custom-menu-schemas#custom-menu-scren)**) and Widgets (**[Mbut](?p=/custom-menu-schemas#widget-mbut)**). The Custom Menu serves as the container for various widgets, each performing specific actions or displaying pertinent information. By using this API, developers can design a menu layout that best fits the needs of drivers, integrating essential features directly into their workflow.
 
 By leveraging this API, developers can craft a user-friendly and functional interface that streamlines a driver's daily operations, improving both efficiency and usability.
 

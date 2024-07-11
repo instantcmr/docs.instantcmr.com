@@ -1035,11 +1035,11 @@ Specifies the corner radius of a widget.
 ```json {% name="Krund" %}
     {"k": "fixed", "dp": 4.5}
 
-     or 
+    // or 
 
     {"k": "relative", "percent": 50} 
 
-     or 
+    // or 
 
     {"k": "unit", "u": 0.1}  
 ```

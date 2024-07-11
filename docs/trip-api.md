@@ -2,7 +2,7 @@
 
 The Trip API lets integration clients manage trip information sent to drivers' mobile devices, including trip metadata, document requests, station and task list, external documents, such as information about site entry, exit, loading or unloading procedures.
 
-Trip entities entities are requested by [GET trip](?p=/trip-api#get-trip), created or updated by sending [PUT trip](?p=/trip-api#put-trip) requests. 
+Trip entities are requested by [GET trip](?p=/trip-api#get-trip), created or updated by sending [PUT trip](?p=/trip-api#put-trip) requests. 
 
 Each trip is allocated an attachment storage where documents and routes attached to the trip can be uploaded to. Attachments can contain any document or file that can be viewed on the mobile devices using an external app installed on the device and associated with the mime type or file extension of the document. Examples include PDF documents (**.pdf** files), navigable routers (**.bcr** files), images (**.jpg**/**.png** files), etc.
 

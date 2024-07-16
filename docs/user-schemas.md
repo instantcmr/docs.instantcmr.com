@@ -98,9 +98,9 @@ Represents a user entity returned by the instantCMR API
 * **oaccn**
 * string (optional)
 * Account name of user.
-Used to form the login name of the user on the instantCMR Hub. Users can login to the instantCMR hub with the login name **oaccn@copid** (e.g. **betram.friedrich@LogisticsGmbH**). The account name may only consist of letters, numbers and the **‘.’** (dot) and **‘-’** (dash) characters. 
+Used to form the login name of the user on the instantCMR Hub. Users can login to the instantCMR Hub with the login name **oaccn@copid** (e.g. **betram.friedrich@LogisticsGmbH**). The account name may only consist of letters, numbers and the **‘.’** (dot) and **‘-’** (dash) characters. 
   
-  If omitted, an account name will be generated from the value of the **usern** field for each user whose roles provide access to the instantCMR hub (**disp**, **rev**, **dia, chedit, chadmin**). The generated account name will contain all valid characters from **usern**, with letters converted to lowercase, whitespaces replaced with **‘.’** (dot) character. E.g. the user name **“Betram Friedrich-Strauss+69”** will be converted to an account name of **“bertram.friedrich-strauss69”**. The account name (both if present or generated from user name) must be unique for each user of the company denoted by **copid**.
+  If omitted, an account name will be generated from the value of the **usern** field for each user whose roles provide access to the instantCMR Hub (**disp**, **rev**, **dia, chedit, chadmin**). The generated account name will contain all valid characters from **usern**, with letters converted to lowercase, whitespaces replaced with **‘.’** (dot) character. E.g. the user name **“Betram Friedrich-Strauss+69”** will be converted to an account name of **“bertram.friedrich-strauss69”**. The account name (both if present or generated from user name) must be unique for each user of the company denoted by **copid**.
 ---
 * **locale**
 * string
@@ -207,9 +207,9 @@ Represents a user update sent to the instantCMR API.
 ---
 * **oaccn**
 * string (optional)
-* Account name of user. Used to form the login name of the user on the instantCMR Hub. Users can login to the instantCMR hub with the login name **oaccn@copid** (e.g. **betram.friedrich@LogisticsGmbH**). The account name may only consist of letters, numbers and the **‘.’** (dot) and **‘-’** (dash) characters.
+* Account name of user. Used to form the login name of the user on the instantCMR Hub. Users can login to the instantCMR Hub with the login name **oaccn@copid** (e.g. **betram.friedrich@LogisticsGmbH**). The account name may only consist of letters, numbers and the **‘.’** (dot) and **‘-’** (dash) characters.
 
-  If omitted, an account name will be generated from the value of the **usern** field for each user whose roles provide access to the instantCMR hub (**disp**, **rev**, **dia, chedit, chadmin**). The generated account name will contain all valid characters from **usern**, with letters converted to lowercase, whitespaces replaced with **‘.’** (dot) character. E.g. the user name **“Betram Friedrich-Strauss+69”** will be converted to an account name of **“bertram.friedrich-strauss69”**. The account name (both if present or generated from user name) must be unique for each user of the company denoted by **copid**.
+  If omitted, an account name will be generated from the value of the **usern** field for each user whose roles provide access to the instantCMR Hub (**disp**, **rev**, **dia, chedit, chadmin**). The generated account name will contain all valid characters from **usern**, with letters converted to lowercase, whitespaces replaced with **‘.’** (dot) character. E.g. the user name **“Betram Friedrich-Strauss+69”** will be converted to an account name of **“bertram.friedrich-strauss69”**. The account name (both if present or generated from user name) must be unique for each user of the company denoted by **copid**.
 ---
 * **locale**
 * string
@@ -339,15 +339,15 @@ Roles assigned to a user.
 ---
 * **odisp**
 * object (optional)
-* Present if the user is a dispatcher, omitted otherwise. When present, the value is an empty object. Dispatchers can manage other users’ document storages and inboxes on the instantCMR hub.
+* Present if the user is a dispatcher, omitted otherwise. When present, the value is an empty object. Dispatchers can manage other users’ document storages and inboxes on the instantCMR Hub.
 ---
 * **orev**
 * object (optional)
-* Present if the user is a reviewer, omitted otherwise. When present, the value is an empty object. Reviewers can manage other users’ trips on the instantCMR hub.
+* Present if the user is a reviewer, omitted otherwise. When present, the value is an empty object. Reviewers can manage other users’ trips on the instantCMR Hub.
 ---
 * **odia**
 * object (optional)
-* Present if the user is a device inventory administrator, omitted otherwise. When present, the value is an empty object. Device inventory administrators can manage mobile devices and assign these devices to drivers on the instantCMR hub.
+* Present if the user is a device inventory administrator, omitted otherwise. When present, the value is an empty object. Device inventory administrators can manage mobile devices and assign these devices to drivers on the instantCMR Hub.
 ---
 * **ochedit**
 * object (optional)

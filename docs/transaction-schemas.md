@@ -703,9 +703,9 @@ Represents an intantCMR User.
 * List of roles assigned to the user.
   {% list %}
   * **driver**: user is a driver. Drivers can be assigned mobile devices and trips and can submit documents.
-  * **disp**: user is a dispatcher. Dispatchers can manage other users’ document storages and inboxes on the instantCMR hub.
-  * **rev**: user is a reviewer. Reviewers can manage other users’ trips on the instantCMR hub.
-  * **dia**: user is a device inventory administrator. Device inventory administrators can manage mobile devices and assign these devices to drivers on the instantCMR hub.
+  * **disp**: user is a dispatcher. Dispatchers can manage other users’ document storages and inboxes on the instantCMR Hub.
+  * **rev**: user is a reviewer. Reviewers can manage other users’ trips on the instantCMR Hub.
+  * **dia**: user is a device inventory administrator. Device inventory administrators can manage mobile devices and assign these devices to drivers on the instantCMR Hub.
   * **chedit**: user is a chat editor. Chat editors can create chat groups and manage (add/remove/mute members of) chat groups they are a member of.
   * **chadmin**: user is a chat administrator. Chat administrators can create chat groups and manage (add/remove/mute members of) any chat group of their organization unit.
   * **iep**: user has API access to instantCMR.

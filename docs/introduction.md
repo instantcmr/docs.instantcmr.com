@@ -1,6 +1,6 @@
 # instantCMR API Documentation
 
-Welcome to the instantCMR API documentation, your comprehensive resource for integrating and optimizing logistics operations using our platform. InstantCMR is a robust platform designed to streamline transport and logistics management, offering powerful tools tailored to enhance efficiency and productivity.
+Welcome to the instantCMR API documentation, your comprehensive resource for integrating and optimizing logistics operations using our platform. instantCMR is a robust platform designed to streamline transport and logistics management, offering powerful tools tailored to enhance efficiency and productivity.
 
 ## What you can achieve with instantCMR API
 

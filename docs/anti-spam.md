@@ -2,9 +2,9 @@
 
 # Anti-Spam requirements for email contacts
 
-InstantCMR takes the enforcement of anti-spam laws very seriously. Spam can lead to negative impacts for all our users, so it’s important that your emails comply with applicable laws. As outlined in our Terms of Use, we take many protective measures beyond what is required by law to help prevent spam and protect our platform.
+instantCMR takes the enforcement of anti-spam laws very seriously. Spam can lead to negative impacts for all our users, so it’s important that your emails comply with applicable laws. As outlined in our Terms of Use, we take many protective measures beyond what is required by law to help prevent spam and protect our platform.
 
-InstantCMR only sends emails (e.g. user invitation, inbound document notification or password reset emails) to email addresses provided and authorized by you and verified by our customer service.
+instantCMR only sends emails (e.g. user invitation, inbound document notification or password reset emails) to email addresses provided and authorized by you and verified by our customer service.
 
 Amongst other channels, these email addresses can be provided to instantCMR via the instantCMR API described in this document. In order to avoid accidental misuse of our API, we require that you pre-authorize each distinct email address sent to us via the instantCMR API.
 

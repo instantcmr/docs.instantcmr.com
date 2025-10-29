@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 *,
 *::before,
@@ -15,8 +15,8 @@
   --nav-height: 56px;
   --footer-height: 56px;
 
-  --sans: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, Helvetica Neue,
-    sans-serif;
+  --sans: Inter, system-ui, -apple-system, Segoe UI, Helvetica Neue, Arial, sans-serif;
+
   --serif: Tiempos, serif;
   --mono: GT America Mono, Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
     monospace;
@@ -38,6 +38,9 @@
   --line-height-6: 40px;
   --line-height-7: 48px;
   --line-height-jumbo: 90px;
+
+  --lh-body: 1.6;
+  --lh-heading: 1.25;
 
   --searchbox-modal-width: 560px;
   
@@ -119,6 +122,10 @@ body,
   padding: 0;
   margin: 0;
   font-family: var(--sans);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+
 }
 
 #__next {
@@ -512,3 +519,60 @@ main .CodeMirror-scroll::-webkit-scrollbar {
   }
 }
 
+
+
+p, blockquote, ul, ol, table {
+  margin: 0 0 0.875rem 0; /* ~14px bottom gap */
+  padding: 0;
+}
+.heading { padding-bottom: 0; } /* stop double-spacing from padding */
+
+/* headings: give bottom margin so they don't crash into the next paragraph */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+  line-height: var(--lh-heading);
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+}
+h1, .h1 { margin-top: 0; } /* first one on a page */
+
+:root { --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', 'Ubuntu Mono', monospace; }
+code {
+  font-family: var(--mono);
+  font-size: .95em;          /* don’t jump size versus text */
+  white-space: normal;       /* allow wrapping in narrow layouts */
+  word-break: break-word;
+}
+
+/* 6) tables: give headers a style and even spacing */
+table { margin: 0 0 1rem 0; }
+th, td { padding: 10px 14px; border-bottom: 1px solid var(--code-border); }
+th { font-weight: 600; text-align: left; }
+
+/* compact lists without weird extra gaps from p+li interactions */
+li { margin: .3rem 0; }
+
+/*  code blocks: keep them legible next to new body line-height */
+pre[class*='language-'] {
+  line-height: 1.5 !important;
+  font-size: 14px !important;
+}
+
+/* keep bullets inside the content column */
+article ul,
+article ol {
+  margin: 0 0 0.875rem 0;      /* vertical rhythm only */
+  padding-inline-start: 1.25rem; /* indent to keep bullets inside */
+  list-style-position: outside;  /* wrapped lines align with text */
+}
+
+/* nested lists a bit tighter */
+article ul ul,
+article ol ol {
+  padding-inline-start: 1rem;
+}
+
+/* optional: tone down marker weight/size */
+article li::marker {
+  font-size: 0.9em;
+  color: var(--black-medium);
+}

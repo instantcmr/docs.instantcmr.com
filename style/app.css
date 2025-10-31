@@ -61,14 +61,13 @@
   --code-border: var(--gray-medium);
   --toc-border: rgba(0, 0, 0, 0.14);
   --translucent: rgba(0, 0, 0, 0.4);
-
-  --docsearch-primary-color: var(--black-medium) !important;
-  --docsearch-logo-color: var(--black-medium) !important;
-
   --button-color: var(--gray-light);
   --button-hover-color: rgba(0, 0, 0, 0.14);
 
   --navbar-background: #333;
+  --docsearch-searchbox-background: var(--gray-light);
+
+  --page-max-width: 1400px;
 }
 
 html, body, #__next { height: 100%; }
@@ -85,7 +84,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--blue);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
@@ -137,18 +136,6 @@ li {
 
 img { max-width: 100%; }
 
-code {
-  font-family: var(--mono);
-  font-size: 0.95em;
-  font-weight: 500;
-  background: var(--code-background);
-  border: 1px solid var(--code-border);
-  border-radius: 3px;
-  padding: 1px 2px;
-  white-space: normal; /* wrap in narrow layouts */
-  word-break: break-word;
-  color: inherit;
-}
 
 /* Lists inside article */
 article ul,
@@ -201,13 +188,13 @@ article {
 
 /* Prism (if present) */
 pre[class*='language-'] {
-  text-shadow: none !important;
-  color: var(--text) !important;
-  background: var(--code-background) !important;
-  font-family: var(--mono) !important;
-  font-size: 14px !important;
-  line-height: 1.5 !important;
-  margin: 0 0 var(--default-vertical-spacing) !important;
+  text-shadow: inherit !important;
+  color: inherit !important;
+  background: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height:inherit !important;
+  margin: inherit !important;
 }
 .token { color: var(--text) !important; background: transparent !important; }
 .token.comment { color: var(--translucent) !important; }
@@ -222,7 +209,7 @@ pre .token.property { color: var(--purple) !important; }
 pre .token.variable { color: var(--green) !important; }
 
 /* Responsive tweaks */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   p { font-size: var(--font-size-3); line-height: var(--line-height-3); }
   h2.jumbo { font-size: 34px; line-height: 47px; }
   blockquote { margin: 0.75rem 0; }

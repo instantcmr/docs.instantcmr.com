@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 /* Reset */
 *,
@@ -11,7 +12,8 @@
   --nav-height: 56px;
   --footer-height: 56px;
 
-  --sans: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, Helvetica Neue, sans-serif;
+  /*--sans: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, sans-serif;*/
+  --sans: "Fira Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, sans-serif;
   --serif: Tiempos, serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', 'Ubuntu Mono', monospace;
 
@@ -85,12 +87,16 @@ body {
 
 a {
   color: var(--blue);
+  text-decoration: none;
+  transition: opacity 300ms ease;
+}
+a:hover {
+  opacity: 0.75;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
-  transition: opacity 300ms ease;
+
 }
-a:hover { opacity: 0.75; }
 
 button {
   cursor: pointer;
@@ -121,8 +127,10 @@ h5, .h5 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
-h1, .h1 { margin-top: 0; } /* first heading on page */
-h1 { font-size: var(--font-size-7); }
+h1, .h1 {
+  margin-top: 0;
+} /* first heading on page */
+h1 { font-size: var(--font-size-6); }
 h2 { font-size: var(--font-size-5); }
 h3 { font-size: var(--font-size-4); }
 h4 { font-size: var(--font-size-3); }

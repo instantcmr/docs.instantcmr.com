@@ -67,6 +67,8 @@
   --button-hover-color: rgba(0, 0, 0, 0.14);
 
   --navbar-background: #333;
+  --footer-background: default;
+  --footer-color: default;
   --docsearch-searchbox-background: var(--gray-light);
 
   --page-max-width: 1400px;
